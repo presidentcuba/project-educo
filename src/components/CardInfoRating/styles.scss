@@ -1,0 +1,69 @@
+.card-rating {
+  position: relative;
+  .image {
+    img {
+      width: 100%;
+    }
+  }
+  .box-name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    span {
+      display: inline-block;
+      background-color: #fd853a;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+      padding: 4px 15px;
+    }
+  }
+  > .card-box {
+    margin-top: 20px;
+    > .title {
+      text-align: left;
+
+      span {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: #282f3e;
+      }
+    }
+    > .description {
+      display: block;
+      margin: 8px 0px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.012em;
+      color: #585d69;
+    }
+    .rating {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .rating-box {
+        display: flex;
+        .rating-number {
+          margin-right: 4px;
+        }
+        .rating-star {
+          .star {
+            padding: 0px 2.5px;
+          }
+        }
+      }
+      .number {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 14px;
+        letter-spacing: 0.005em;
+        color: #888c94;
+      }
+    }
+  }
+}

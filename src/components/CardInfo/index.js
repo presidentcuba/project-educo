@@ -1,16 +1,14 @@
 import { Typography } from "antd";
-const CardInfo = ({ ...props }) => {
-  const { image, label, sale } = props;
+import "./styles.scss";
+const CardInfo = ({ data }) => {
+  const { image, title } = data;
   return (
     <div className="card-info">
       <div className="image">
-        <img src={image} alt={label} />
+        <img src={image} alt={title} />
       </div>
       <div className="title">
-        <Typography.Text>{label}</Typography.Text>
-      </div>
-      <div className="box">
-        <Typography.Text>{sale}</Typography.Text>
+        <Typography.Text>{title}</Typography.Text>
       </div>
     </div>
   );
