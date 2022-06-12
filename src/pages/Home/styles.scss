@@ -1,0 +1,106 @@
+.home {
+  padding: 74px 18px;
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .info-title {
+      .title {
+        display: block;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 34px;
+        letter-spacing: 0.01em;
+        color: #0b121f;
+      }
+      .question {
+        display: block;
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #70747e;
+      }
+    }
+    .info-avatar {
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+  .input-search {
+    margin: 30px 0px;
+    span[class^="ant-input-affix-wrapper"] {
+      border: unset !important;
+      border-radius: 8px;
+      padding: 20px 11px;
+      background-color: #fff1f3;
+      input {
+        background-color: #fff1f3;
+      }
+    }
+  }
+  .home-body {
+    .main {
+      margin-top: 40px;
+      .body-title {
+        display: flex;
+        justify-content: space-between;
+        .title {
+          font-style: normal;
+          width: 60%;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 28px;
+          letter-spacing: 0.01em;
+          color: #282f3e;
+        }
+        .see-more {
+          display: flex;
+          align-items: flex-end;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          letter-spacing: 0.01em;
+          color: #70747e;
+        }
+      }
+      .item {
+        margin: 30px 0px;
+        .ant-row {
+          margin: 0px -10px;
+          .ant-col {
+            padding: 10px 10px;
+          }
+        }
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .menu-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .menu-home {
+        .text {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 19px;
+          letter-spacing: 0.01em;
+          color: #404653;
+        }
+      }
+      .icon {
+        padding: 0px 18px;
+      }
+      img {
+        padding: 0px 18px;
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@ const ForgotPassword = () => {
   return (
     <div className="forgot-password-container">
       <div className="icon-back">
-        <Link to="/register">
+        <Link to="/forgot-password/check-email">
           <LeftOutlined />
         </Link>
       </div>
