@@ -29,7 +29,7 @@ const LoginPage = () => {
     <>
       <Layout className="login-container">
         <Content>
-          <Typography.Text className="btn-skip">skip</Typography.Text>
+          {/* <Typography.Text className="btn-skip">skip</Typography.Text> */}
           <Carousel dots={true} autoplay={true} effect="fade">
             {dataLogin.map((data, index) => (
               <div className="login-slider" key={index}>
