@@ -1,0 +1,46 @@
+.card-search {
+  display: flex;
+  .image {
+    margin-right: 15px;
+    img {
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+  .info {
+    .info-title {
+      display: block;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.2;
+      letter-spacing: 0.012em;
+      color: #282f3e;
+    }
+    .info-name {
+      display: block;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      letter-spacing: 0.01em;
+      color: #282f3e;
+    }
+  }
+  .rating {
+    .user {
+      width: 13px;
+    }
+    span {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 16px;
+      color: #70747e;
+    }
+    .total {
+      margin-right: 19px;
+    }
+    img {
+      margin-right: 5px;
+    }
+  }
+}
