@@ -1,15 +1,12 @@
 import CardInfo from "src/components/CardInfo";
 import CardRating from "src/components/CardInfoRating";
+import CustomInput from "src/components/Input";
 import "./styles.scss";
 import { Row, Col, Typography, Input } from "antd";
 import { Link } from "react-router-dom";
-import { SearchOutlined } from "@ant-design/icons";
 import demo from "src/assets/demo.svg";
 import avatar from "src/assets/avatar1.svg";
-import home from "src/assets/home.jpg";
-import home1 from "src/assets/hom1.png";
-import user from "src/assets/user.png";
-import search from "src/assets/search.png";
+
 import teacher from "src/assets/teacher.png";
 
 const dataCardInfo = { image: demo, title: "Interior design" };
@@ -27,6 +24,9 @@ const dataRating = {
   description: "Sayef Mamud, PixelCo",
 };
 const Home = () => {
+  const handleChange = (e) => {
+    console.log(e);
+  };
   return (
     <div className="home">
       {/* info */}
@@ -42,7 +42,10 @@ const Home = () => {
         </div>
       </div>
       <div className="input-search">
-        <Input suffix={<SearchOutlined />} placeholder="Graphic illustration" />
+        <CustomInput
+          onChange={handleChange}
+          placeholder="Graphic illustration"
+        />
       </div>
       <div className="home-body">
         {/* popular */}
@@ -58,8 +61,8 @@ const Home = () => {
 
           <div className="item">
             <Row>
-              {[...new Array(2)].map((item) => (
-                <Col span={12}>
+              {[...new Array(2)].map((_, index) => (
+                <Col span={12} key={index}>
                   <CardInfo data={dataCardInfo} />
                 </Col>
               ))}
@@ -79,8 +82,8 @@ const Home = () => {
 
           <div className="item">
             <Row>
-              {[...new Array(2)].map((_) => (
-                <Col span={12}>
+              {[...new Array(2)].map((_, index) => (
+                <Col span={12} key={index}>
                   <CardRating data={dataRating} />
                 </Col>
               ))}
@@ -101,8 +104,8 @@ const Home = () => {
 
           <div className="item">
             <Row>
-              {[...new Array(2)].map((_) => (
-                <Col span={12}>
+              {[...new Array(2)].map((_, index) => (
+                <Col span={12} key={index}>
                   <CardInfo data={dataPopular} />
                 </Col>
               ))}
@@ -131,8 +134,8 @@ const Home = () => {
 
           <div className="item">
             <Row>
-              {[...new Array(2)].map((_) => (
-                <Col span={12}>
+              {[...new Array(2)].map((_, index) => (
+                <Col span={12} key={index}>
                   <CardRating data={dataRating} />
                 </Col>
               ))}
@@ -153,24 +156,12 @@ const Home = () => {
 
           <div className="item">
             <Row>
-              {[...new Array(2)].map((_) => (
-                <Col span={12}>
+              {[...new Array(2)].map((_, index) => (
+                <Col span={12} key={index}>
                   <CardRating data={dataRating} />
                 </Col>
               ))}
             </Row>
-          </div>
-        </div>
-        {/* menu */}
-        <div className="menu">
-          <div className="menu-box">
-            <div className="menu-home icon">
-              <img src={home} alt="home" />
-              <Typography.Text className="text">Home</Typography.Text>
-            </div>
-            <img src={search} alt="search icon" />
-            <img src={home1} alt="home icon" />
-            <img src={user} alt="user icon" />
           </div>
         </div>
       </div>

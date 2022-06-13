@@ -7,6 +7,8 @@ const ForgotPassword = React.lazy(() => import("src/pages/ForgotPassword"));
 const CheckMail = React.lazy(() => import("src/pages/CheckEmail"));
 const ResetPassword = React.lazy(() => import("src/pages/ResetPassword"));
 const Home = React.lazy(() => import("src/pages/Home"));
+const Search = React.lazy(() => import("src/pages/Search"));
+const SearchResult = React.lazy(() => import("src/pages/SearchResult"));
 
 const routes = [
   {
@@ -40,6 +42,14 @@ const routes = [
   {
     path: "/home",
     component: Home,
+  },
+  {
+    path: "/search",
+    component: Search,
+  },
+  {
+    path: "/search/:id",
+    component: SearchResult,
   },
 ];
 export default routes;

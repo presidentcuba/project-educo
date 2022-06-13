@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .menu-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      display: flex;
+      align-items: center;
+      img {
+        padding: 0px 18px;
+      }
+      span {
+        display: none;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: #404653;
+      }
+      .active {
+        display: block;
+      }
+    }
+  }
+}
