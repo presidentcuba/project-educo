@@ -10,8 +10,14 @@ import home from "src/assets/home.jpg";
 import home1 from "src/assets/hom1.png";
 import user from "src/assets/user.png";
 import search from "src/assets/search.png";
+import teacher from "src/assets/teacher.png";
 
-const data = { image: demo, title: "Interior design" };
+const dataCardInfo = { image: demo, title: "Interior design" };
+const dataPopular = {
+  image: teacher,
+  name: "Sarrah Morry",
+  position: "Programmer",
+};
 const dataRating = {
   image: demo,
   title: "HTML, CSS for nooband nerds! ",
@@ -54,7 +60,7 @@ const Home = () => {
             <Row>
               {[...new Array(2)].map((item) => (
                 <Col span={12}>
-                  <CardInfo data={data} />
+                  <CardInfo data={dataCardInfo} />
                 </Col>
               ))}
             </Row>
@@ -79,6 +85,36 @@ const Home = () => {
                 </Col>
               ))}
             </Row>
+          </div>
+        </div>
+        {/* our-top popular */}
+
+        <div className="top-popular main">
+          <div className="body-title">
+            <Typography.Text className="title">
+              Our top popular teacher this month
+            </Typography.Text>
+            <Link to="/home" className="see-more">
+              see more
+            </Link>
+          </div>
+
+          <div className="item">
+            <Row>
+              {[...new Array(2)].map((_) => (
+                <Col span={12}>
+                  <CardInfo data={dataPopular} />
+                </Col>
+              ))}
+            </Row>
+          </div>
+          <div className="try-free">
+            <Typography.Text className="slogan">
+              Try free trial to enhance your creative journey!
+            </Typography.Text>
+            <Link to="/" className="get-free">
+              Get free trial
+            </Link>
           </div>
         </div>
         {/* most-category */}
