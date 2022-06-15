@@ -11,7 +11,7 @@ const Footer = () => {
   const location = useLocation();
   const [path, setPath] = useState("");
   const dataFooter = [
-    { path: "/home", icon: home, label: "Home" },
+    { path: "/", icon: home, label: "Home" },
     { path: "/search", icon: search, label: "Search" },
     { path: "/saved", icon: home1, label: "Saved" },
     { path: "/profile", icon: user, label: "Profile" },
@@ -21,7 +21,7 @@ const Footer = () => {
       setPath(location.pathname);
     }
   }, [location.pathname]);
-  console.log(location);
+
   return (
     <div className="footer">
       <div className="menu-box">

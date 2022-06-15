@@ -20,8 +20,8 @@ const CardRating = ({ data }) => {
           <div className="rating-box">
             <div className="rating-number number">{number}</div>
             <div className="rating-star">
-              {[...new Array(4)].map((item) => (
-                <img src={star} className="star" alt="star" />
+              {[...new Array(4)].map((_, index) => (
+                <img src={star} className="star" alt="star" key={index} />
               ))}
             </div>
           </div>

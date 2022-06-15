@@ -30,6 +30,14 @@
     }
   }
   .categories {
+    .title {
+      display: block;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: 0.015em;
+      color: #585d69;
+    }
     .item {
       margin: 30px 0px;
       .ant-row {

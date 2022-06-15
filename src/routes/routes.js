@@ -9,6 +9,9 @@ const ResetPassword = React.lazy(() => import("src/pages/ResetPassword"));
 const Home = React.lazy(() => import("src/pages/Home"));
 const Search = React.lazy(() => import("src/pages/Search"));
 const SearchResult = React.lazy(() => import("src/pages/SearchResult"));
+const SavedEmpty = React.lazy(() => import("src/pages/SavedEmpty"));
+const SavedList = React.lazy(() => import("src/pages/SavedList"));
+const Profile = React.lazy(() => import("src/pages/Profile"));
 
 const routes = [
   {
@@ -40,7 +43,7 @@ const routes = [
     component: ResetPassword,
   },
   {
-    path: "/home",
+    path: "/",
     component: Home,
   },
   {
@@ -50,6 +53,18 @@ const routes = [
   {
     path: "/search/:id",
     component: SearchResult,
+  },
+  {
+    path: "/saved/empty",
+    component: SavedEmpty,
+  },
+  {
+    path: "/saved/list",
+    component: SavedList,
+  },
+  {
+    path: "/profile/personal",
+    component: Profile,
   },
 ];
 export default routes;

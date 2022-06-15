@@ -6,7 +6,6 @@ import { Row, Col, Typography, Input } from "antd";
 import { Link } from "react-router-dom";
 import demo from "src/assets/demo.svg";
 import avatar from "src/assets/avatar1.svg";
-
 import teacher from "src/assets/teacher.png";
 
 const dataCardInfo = { image: demo, title: "Interior design" };
