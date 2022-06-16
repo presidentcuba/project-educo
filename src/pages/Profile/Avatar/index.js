@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography } from "antd";
+import { Link } from "react-router-dom";
 import setting from "src/assets/setting.svg";
 import profile from "src/assets/profile.svg";
 import insta from "src/assets/insta.svg";
@@ -10,7 +11,9 @@ export default function Avatar() {
   return (
     <div className="avatar">
       <div className="avatar-header">
-        <img src={setting} alt="setting" />
+        <Link to="/profile/setting">
+          <img src={setting} alt="setting" />
+        </Link>
       </div>
 
       <div className="info-box">

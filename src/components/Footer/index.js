@@ -14,7 +14,7 @@ const Footer = () => {
     { path: "/", icon: home, label: "Home" },
     { path: "/search", icon: search, label: "Search" },
     { path: "/saved", icon: home1, label: "Saved" },
-    { path: "/profile", icon: user, label: "Profile" },
+    { path: "/profile/personal", icon: user, label: "Profile" },
   ];
   useEffect(() => {
     if (location && location.pathname) {

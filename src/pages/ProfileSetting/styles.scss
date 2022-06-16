@@ -1,0 +1,111 @@
+.profile-setting {
+  padding: 30px 20px;
+  .icon-title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    a {
+      color: #0b121f;
+    }
+    .title {
+      width: 100%;
+      span {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 28px;
+
+        letter-spacing: 0.01em;
+        color: #0b121f;
+      }
+    }
+  }
+}
+.card-box {
+  padding: 20px 0px;
+  border-bottom: 1px solid #cfd1d4;
+  .title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #70747e;
+  }
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .content {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 23px;
+      letter-spacing: 0.01em;
+      color: #404653;
+      margin-top: 15px;
+    }
+    a {
+      margin-bottom: 10px;
+      display: block;
+      padding: 8px 22px;
+      background: #edeef0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: #282f3e;
+      span {
+      }
+    }
+  }
+}
+.card-notice {
+  padding: 20px 0px;
+  border-bottom: 1px solid #cfd1d4;
+  .title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #70747e;
+  }
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .content {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 23px;
+      letter-spacing: 0.01em;
+      color: #404653;
+      margin-top: 15px;
+    }
+  }
+}
+.card-footer {
+  margin-top: 20px;
+  .title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #70747e;
+  }
+  .footer-content {
+    .card-item {
+      padding: 7px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.01em;
+        color: #404653;
+      }
+    }
+  }
+}

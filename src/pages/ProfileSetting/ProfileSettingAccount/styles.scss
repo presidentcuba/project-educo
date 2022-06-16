@@ -1,0 +1,97 @@
+.profile-setting-account {
+  display: flex;
+  flex-direction: column;
+  padding: 89px 20px;
+  .avatar-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    img {
+      border-radius: 50%;
+      width: 35%;
+      object-fit: cover;
+    }
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: #265ae8;
+      display: block;
+      margin: 20px 0px;
+    }
+  }
+  .icon-back {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 8px;
+    margin-bottom: 24px;
+    a {
+      color: #292d32 !important;
+    }
+  }
+  .title {
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.012em;
+    margin-bottom: 34px;
+    color: #101828;
+  }
+  input[class^="ant-input"] {
+    border: unset !important;
+    border-bottom: 1px solid #cfd1d4 !important;
+    &:hover {
+      border: unset !important;
+      box-shadow: unset !important;
+      border-bottom: 1px solid #cfd1d4 !important;
+    }
+    &:focus {
+      border: unset !important;
+      box-shadow: unset !important;
+      border-bottom: 1px solid #cfd1d4 !important;
+    }
+  }
+  input[class^="ant-input-focused"] {
+    border-bottom: 1px solid #cfd1d4 !important;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      padding: 0px !important;
+      border: unset !important;
+    }
+    .btn-cancel {
+      span {
+        font-weight: 500;
+        display: block;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #f04438;
+        padding: 8px 22px !important;
+      }
+    }
+    .btn-save {
+      span {
+        font-weight: 500;
+        background-color: #265ae8;
+        border-radius: 4px;
+        display: block;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        padding: 8px 22px !important;
+      }
+    }
+  }
+}

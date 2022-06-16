@@ -12,6 +12,13 @@ const SearchResult = React.lazy(() => import("src/pages/SearchResult"));
 const SavedEmpty = React.lazy(() => import("src/pages/SavedEmpty"));
 const SavedList = React.lazy(() => import("src/pages/SavedList"));
 const Profile = React.lazy(() => import("src/pages/Profile"));
+const ProfileSetting = React.lazy(() => import("src/pages/ProfileSetting"));
+const ProfileSettingAccount = React.lazy(() =>
+  import("src/pages/ProfileSetting/ProfileSettingAccount")
+);
+const ProfileSettingChange = React.lazy(() =>
+  import("src/pages/ProfileSetting/ProfileSettingChange")
+);
 
 const routes = [
   {
@@ -65,6 +72,18 @@ const routes = [
   {
     path: "/profile/personal",
     component: Profile,
+  },
+  {
+    path: "/profile/setting",
+    component: ProfileSetting,
+  },
+  {
+    path: "/profile/setting/profile-setting",
+    component: ProfileSettingAccount,
+  },
+  {
+    path: "/profile/setting/profile-change",
+    component: ProfileSettingChange,
   },
 ];
 export default routes;
