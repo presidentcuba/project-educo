@@ -1,0 +1,39 @@
+.card-lesson {
+  .lesson {
+    display: flex;
+    align-items: center;
+    img {
+      flex: 40%;
+      border-radius: 4px;
+      width: 100%;
+      object-fit: cover;
+      margin-right: 7px;
+    }
+    .lesson-title {
+      .title {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+        color: #282f3e;
+      }
+      .des {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+        color: #585d69;
+        margin-top: 6px;
+      }
+    }
+  }
+  .content {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 0.025em;
+    color: #70747e;
+  }
+}

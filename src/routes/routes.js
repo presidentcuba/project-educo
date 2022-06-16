@@ -19,6 +19,7 @@ const ProfileSettingAccount = React.lazy(() =>
 const ProfileSettingChange = React.lazy(() =>
   import("src/pages/ProfileSetting/ProfileSettingChange")
 );
+const Course = React.lazy(() => import("src/pages/Course"));
 
 const routes = [
   {
@@ -84,6 +85,10 @@ const routes = [
   {
     path: "/profile/setting/profile-change",
     component: ProfileSettingChange,
+  },
+  {
+    path: "/course/overview",
+    component: Course,
   },
 ];
 export default routes;
