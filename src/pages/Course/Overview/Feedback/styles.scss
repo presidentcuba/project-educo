@@ -1,0 +1,94 @@
+.feedback {
+  padding: 0px 20px;
+  .feedback-title {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #282f3e;
+    margin-bottom: 23px;
+  }
+  .feedback-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .item-rating {
+      background-color: #fff1f3;
+      border-radius: 4px;
+      padding: 24px 45px;
+      .rate,
+      .user {
+        display: flex;
+        > span {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 140%;
+          letter-spacing: 0.015em;
+          color: #404653;
+          margin-left: 6px;
+        }
+      }
+      span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #404653;
+      }
+    }
+  }
+  .comment-box {
+    .comment {
+      display: flex;
+      padding: 20px 0px;
+      .image {
+        margin-right: 10px;
+        img {
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+      .thread {
+        span {
+          display: block;
+        }
+        .name {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 140%;
+          letter-spacing: 0.015em;
+          color: #404653;
+        }
+        .time {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 17px;
+          letter-spacing: 0.01em;
+          color: #9fa3a9;
+        }
+        .content {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 140%;
+          letter-spacing: 0.015em;
+          color: #282f3e;
+        }
+      }
+    }
+  }
+  .feedback-btn {
+    margin: 40px 0px;
+    display: block;
+    padding: 20px 0px;
+    border-radius: 6px;
+    border: 1px solid #cfd1d4;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #265ae8;
+  }
+}

@@ -20,6 +20,10 @@ const ProfileSettingChange = React.lazy(() =>
   import("src/pages/ProfileSetting/ProfileSettingChange")
 );
 const Course = React.lazy(() => import("src/pages/Course"));
+const Payment = React.lazy(() => import("src/pages/PayMent/StepOne"));
+const PaymentTwo = React.lazy(() => import("src/pages/PayMent/StepTrue"));
+const CourseDetail = React.lazy(() => import("src/pages/CourseDetail"));
+const AddCourse = React.lazy(() => import("src/pages/AddCourse"));
 
 const routes = [
   {
@@ -89,6 +93,22 @@ const routes = [
   {
     path: "/course/overview",
     component: Course,
+  },
+  {
+    path: "/payment",
+    component: Payment,
+  },
+  {
+    path: "/payment/step-2",
+    component: PaymentTwo,
+  },
+  {
+    path: "/course/project/full-view",
+    component: CourseDetail,
+  },
+  {
+    path: "/course/project/add",
+    component: AddCourse,
   },
 ];
 export default routes;

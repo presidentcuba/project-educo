@@ -15,7 +15,7 @@ export default function Profile() {
     <div className="profile">
       <Avatar />
       <div className="profile-content">
-        <Tabs defaultActiveKey="1" onChange={onChange}>
+        <Tabs defaultActiveKey="1" onChange={onChange} centered>
           <TabPane tab="Projects" key="1">
             <Project />
           </TabPane>

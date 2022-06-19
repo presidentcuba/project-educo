@@ -1,0 +1,74 @@
+.payment-step-one {
+  padding: 0px 20px;
+  height: calc(100vh - 30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .title {
+    font-weight: 500;
+    display: block;
+    font-size: 26px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #0b121f;
+  }
+  .description {
+    display: block;
+    padding: 20px 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #9fa3a9;
+  }
+  .type-payment {
+    width: 100%;
+    .item {
+      padding: 15px 20px;
+      border-radius: 4px;
+      background-color: #edeef0;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      .content {
+        margin-left: 10px;
+        span {
+          display: block;
+        }
+        .price {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 23px;
+          letter-spacing: 0.012em;
+          color: #282f3e;
+        }
+        .sale {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          letter-spacing: 0.01em;
+          color: #282f3e;
+        }
+      }
+    }
+  }
+
+  a {
+    margin-top: 70px;
+    display: inline-block;
+    padding: 20px 0px;
+    background: #265ae8;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,86 @@
+.comment {
+  padding: 0px 20px;
+  .comment-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.01em;
+      color: #282f3e;
+    }
+    .btn-add {
+      display: block;
+      padding: 10px 16px;
+      background: #edeef0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: #000000;
+      border-radius: 4px;
+    }
+  }
+}
+.comment-detail {
+  display: flex;
+  padding: 20px 0px;
+  .image {
+    margin-right: 10px;
+    img {
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  .thread {
+    width: 100%;
+    span {
+      display: block;
+    }
+    .name {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: 0.015em;
+      color: #404653;
+    }
+    .time {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      letter-spacing: 0.01em;
+      color: #9fa3a9;
+    }
+    .content {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: 0.015em;
+      color: #282f3e;
+    }
+    .like-box {
+      display: flex;
+      justify-content: space-between;
+      .item {
+        display: flex;
+        align-items: center;
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+  .total-like {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #265ae8;
+  }
+}

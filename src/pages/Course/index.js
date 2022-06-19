@@ -1,27 +1,23 @@
-import CardLesson from "./CardLesson";
-import lesson from "src/assets/lesson.svg";
+import InfoCourseDetail from "./InfoCourseDetail/index";
+import Overview from "./Overview";
+import Lessons from "./Lessons";
+import { Tabs } from "antd";
+
 const Course = () => {
-  const dataLesson = [
-    {
-      image: lesson,
-      name: "Nulla sit mauris nunc of suscipit",
-      lesson: "Lesson 2",
-      content:
-        "Eu lacus ornare sollicitudin dolor mauris fbib fen dum tritique massa euiod suspe mauris nunc ac felis orcieu soft lectus nibh vulputate urna ut sed neque",
-    },
-    {
-      image: lesson,
-      name: "Nulla sit mauris nunc of suscipit",
-      lesson: "Lesson 2",
-      content:
-        "Eu lacus ornare sollicitudin dolor mauris fbib fen dum tritique massa euiod suspe mauris nunc ac felis orcieu soft lectus nibh vulputate urna ut sed neque",
-    },
-  ];
+  const { TabPane } = Tabs;
+
   return (
     <>
-      {dataLesson.map((item, index) => (
-        <CardLesson data={item} key={index} />
-      ))}
+      <InfoCourseDetail />
+
+      <Tabs defaultActiveKey="1" centered>
+        <TabPane tab="Overview" key="1">
+          <Overview />
+        </TabPane>
+        <TabPane tab="Lessons" key="2">
+          <Lessons />
+        </TabPane>
+      </Tabs>
     </>
   );
 };

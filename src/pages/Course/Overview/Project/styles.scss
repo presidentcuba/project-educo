@@ -1,0 +1,49 @@
+.project-by-student {
+  padding: 0px 20px;
+  .project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.01em;
+      color: #282f3e;
+    }
+    .btn-add {
+      display: block;
+      padding: 10px 16px;
+      background: #edeef0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: #000000;
+      border-radius: 4px;
+    }
+  }
+  .project-content {
+    .ant-row {
+      margin: 0px -10px;
+      .ant-col-12 {
+        padding: 5px 10px;
+      }
+    }
+  }
+  .project-btn {
+    margin: 40px 0px;
+    display: block;
+    padding: 20px 0px;
+    border-radius: 6px;
+    border: 1px solid #cfd1d4;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #265ae8;
+  }
+}
